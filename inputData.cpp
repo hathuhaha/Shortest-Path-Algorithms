@@ -23,8 +23,6 @@ void loadData(std::string& inputFile, std::vector<std::vector<std::pair<int, int
 	std::fstream input(inputFile);
 	input >> n >> m;
 	adj.resize(n);
-	for (int i = 0; i < n; i++)
-		adj[i].resize(n);
 	for (int i = 0; i < m; i++) {
 		int u, v, w; 
 		input >> u >> v >> w;
