@@ -3,7 +3,7 @@
 vector<long long> Dijkstra(int& n, int& m, vector<vector<pair<int, int>>>& adj) {
 	vector<long long> shortestPath;
 	shortestPath.resize(n);
-	priority_queue<pair<long long, int>> pq;
+	priority_queue<pair<long long, int>, vector<pair<long long, int>>, greater< pair<long long, int> > >  pq;
 	shortestPath[0] = 0;
 	for (int i = 1; i < n; i++)
 		shortestPath[i] = inf;
